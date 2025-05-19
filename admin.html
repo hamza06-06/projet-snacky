@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Administration - Snacky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="header__logo">Snacky Admin 🍔</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <button id="dark-toggle" class="theme-toggle">🌙 Mode sombre</button>
+
+  <main class="admin">
+    <div class="container">
+      <h2 class="admin__title">Gestion des produits</h2>
+
+      <table class="admin__table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Produit</th>
+            <th>Prix</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Cheeseburger</td>
+            <td>6€</td>
+            <td>
+              <button class="admin__edit">Modifier</button>
+              <button class="admin__delete">Supprimer</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Frites</td>
+            <td>2.50€</td>
+            <td>
+              <button class="admin__edit">Modifier</button>
+              <button class="admin__delete">Supprimer</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+
+
+</body>
+</html>

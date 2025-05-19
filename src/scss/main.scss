@@ -1,0 +1,56 @@
+@use 'partials/variables' as *;
+@use 'partials/mixins' as mix;
+
+
+
+@use 'components/theme' as *;
+@use 'components/admin' as *;
+@use 'components/hero' as *;
+@use 'components/header' as *;
+@use 'components/form' as *;
+@use 'components/footer' as *;
+
+
+
+
+.dark-mode {
+  background-color: #121212;
+  color: var(--color-light);
+
+  .header {
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  .footer {
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  .hero,
+  .form,
+  .container {
+    background-color: transparent !important;
+    color: white;
+  }
+
+  .form__input {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+  }
+
+  .admin__table {
+    background-color: #1a1a1a;
+    color: white;
+
+    th {
+      background-color: #2a2a2a;
+    }
+
+    td {
+      background-color: #1f1f1f;
+    }
+  }
+}
+

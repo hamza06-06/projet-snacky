@@ -1,0 +1,28 @@
+.hero {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  padding: 2rem 0;
+  text-align: center;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}

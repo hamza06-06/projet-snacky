@@ -1,0 +1,12 @@
+@use '../partials/mixins' as mix;
+.footer {
+ @include mix.center-flex;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+  padding: 1.5rem 0;
+
+  &__text {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Design Guide - Snacky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/scss/main.scss">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="header__logo">Snacky 🎨 Design Guide</h1>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="guide.html">Guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <button id="dark-toggle" class="theme-toggle">🌙 Mode sombre</button>
+
+
+  <main class="guide container">
+    <section>
+      <h2>Typographies</h2>
+      <p>Texte normal</p>
+      <p><strong>Texte en gras</strong></p>
+      <h3>Titre de niveau 3</h3>
+    </section>
+
+    <section>
+      <h2>Couleurs</h2>
+      <div style="background-color: var(--color-primary); padding: 1rem; color: white;">Primary</div>
+      <div style="background-color: var(--color-accent); padding: 1rem;">Accent</div>
+      <div style="background-color: var(--color-light); padding: 1rem;">Light</div>
+      <div style="background-color: var(--color-dark); padding: 1rem; color: white;">Dark</div>
+    </section>
+
+    <section>
+      <h2>Boutons</h2>
+      <button class="form__button">Bouton principal</button>
+      <button class="admin__edit">Bouton modifier</button>
+      <button class="admin__delete">Bouton supprimer</button>
+    </section>
+
+    <section>
+      <h2>Formulaire</h2>
+      <form class="form">
+        <input type="email" class="form__input" placeholder="Email" />
+        <input type="password" class="form__input" placeholder="Mot de passe" />
+        <button type="submit" class="form__button">Se connecter</button>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+
+
+</body>
+</html>
